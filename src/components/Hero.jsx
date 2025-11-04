@@ -6,8 +6,8 @@ import { useRef } from "react";
 import { useMediaQuery } from "react-responsive";
 
 const Hero = () => {
-  const videoRef= useRef()
-const isMobile =useMediaQuery({maxWidth:767})
+  const videoRef = useRef();
+  const isMobile = useMediaQuery({ maxWidth: 767 });
 
   useGSAP(() => {
     const heroSplit = new SplitText(".title", { type: "chars,word" });
@@ -44,36 +44,32 @@ const isMobile =useMediaQuery({maxWidth:767})
       .to(".right-leaf", { y: 200 }, 0)
       .to(".left-leaf", { y: -200 }, 0);
     // .to(".title",{y:700},0)
-    const startValue=isMobile?"top 50%":"center 60%";
-    const endValue=isMobile?"120% top":"bottom top";
-
+    const startValue = isMobile ? "top 50%" : "center 60%";
+    const endValue = isMobile ? "120% top" : "bottom top";
 
     let tl = gsap.timeline({
-       scrollTrigger: {
+      scrollTrigger: {
         trigger: "video",
         start: startValue,
         end: endValue,
         scrub: true,
         pin: true,
-       },
+      },
+    });
+
+    // console.log(videoRef.current)
+
+    videoRef.current.onloadedmetadata = () => {
+      tl.to(videoRef.current, {
+        currentTime: videoRef.current.duration,
+        // scale:1.3
       });
-
-
-      console.log(videoRef.current)
-    
-      videoRef.current.onloadedmetadata=()=>{
-        tl.to(videoRef.current,{
-          currentTime:videoRef.current.duration,
-          scale:1.3
-        })
-      }
+    };
   });
-
-
 
   return (
     <>
-      <section id="hero" className="noisy">
+      <section id="hero" className="">
         <h1 className="title">MOJITO</h1>
         <img
           className="left-leaf"
@@ -110,11 +106,12 @@ const isMobile =useMediaQuery({maxWidth:767})
 
       <div className="video absolute inset-0">
         <video
-        ref={videoRef}
-        src="/videos/output.mp4"
-        muted
-        playsInline
-        preload="auto" />
+          ref={videoRef}
+          src="/videos/input.mp4"
+          muted
+          playsInline
+          preload="auto"
+        />
       </div>
     </>
   );
