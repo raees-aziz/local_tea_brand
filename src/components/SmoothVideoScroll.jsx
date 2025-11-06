@@ -36,7 +36,7 @@ const SmoothVideoScroll = () => {
       <section>
         <video
           ref={videoRef}
-          src="/videos/tea.mp4"
+          src="/videos/coffee.mp4"
           playsInline
           preload="auto"
           muted

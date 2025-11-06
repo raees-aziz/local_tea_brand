@@ -38,14 +38,14 @@ parallaxTimeline.from('c-left-leaf',{x:-100,y:100})
 
       <div className="list">
         <div className="popular">
-          <h2>Most Popular Cocktails:</h2>
+          <h2>Most Popular Tea:</h2>
           <ul>
             {cocktailLists.map(({ name, country, detail, price }) => (
               <li key={name}>
                 <div className="md:me-28">
                   <h3>{name}</h3>
                   <p>
-                    {country} | {detail}
+                    | {detail}
                   </p>
                 </div>
                 <span>-{price}</span>
@@ -55,14 +55,14 @@ parallaxTimeline.from('c-left-leaf',{x:-100,y:100})
         </div>
         {/* Love */}
         <div className="loved">
-          <h2>Most loved Cocktails:</h2>
+          <h2>Most loved Tea:</h2>
           <ul>
             {mockTailLists.map(({ name, country, detail, price }) => (
               <li key={name}>
                 <div className="me-28">
                   <h3>{name}</h3>
                   <p>
-                    {country} | {detail}
+                     | {detail}
                   </p>
                 </div>
                 <span>-{price}</span>

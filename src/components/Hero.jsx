@@ -5,6 +5,8 @@ import gsap from "gsap";
 import { useRef } from "react";
 import { useMediaQuery } from "react-responsive";
 
+gsap.registerPlugin(SplitText, ScrollTrigger )
+
 const Hero = () => {
   const videoRef = useRef();
   const isMobile = useMediaQuery({ maxWidth: 767 });
@@ -70,7 +72,7 @@ const Hero = () => {
   return (
     <>
       <section id="hero" className="">
-        <h1 className="title">MOJITO</h1>
+        <h1 className="title">TAPAL</h1>
         <img
           className="left-leaf"
           src="images/hero-left-leaf.png"
@@ -85,20 +87,20 @@ const Hero = () => {
         <div className="body">
           <div className="content">
             <div className="space-y-5 hidden md:block">
-              <p>Cool. Crisp. Classic.</p>
+              <p>Hot. Crisp. Classic.</p>
               <p className="subtitle">
                 Sip the Spirit <br />
-                of Summer
+                of Winter
               </p>
             </div>
 
             <div className="view-cocktails">
               <p className="subtitle">
-                Every cockrail on our menu is a blend of premium ingredients,
+                Every product on our menu is a blend of premium ingredients,
                 ceative flair, and timeless recipes - designed to delight your
                 senses
               </p>
-              <a href="#cocktails">View Cocktails</a>
+              <a href="#cocktails">View Product</a>
             </div>
           </div>
         </div>
@@ -107,9 +109,9 @@ const Hero = () => {
       <div className="video absolute inset-0">
         <video
           ref={videoRef}
-          src="/videos/input.mp4"
+          src="/videos/coffee-output.mp4"
           muted
-          playsInline
+          // playsInline
           preload="auto"
         />
       </div>

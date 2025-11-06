@@ -1,7 +1,7 @@
 const navLinks = [
  {
-	id: "cocktails",
-	title: "Cocktails",
+	id: "Tea",
+	title: "Product",
  },
  {
 	id: "about",
@@ -19,55 +19,55 @@ const navLinks = [
 
 const cocktailLists = [
  {
-	name: "Chapel Hill Shiraz",
+	name: "Tapal Danedar",
 	country: "AU",
-	detail: "Battle",
-	price: "$10",
+	detail: "Karak Tea",
+	price: "$100",
  },
  {
-	name: "Caten Malbee",
+	name: "Family Mixture",
 	country: "AU",
-	detail: "Battle",
-	price: "$49",
+	detail: "Karak Tea",
+	price: "$490",
  },
  {
-	name: "Rhino Pale Ale",
-	country: "CA",
+	name: "Teez Dum",
+	country: "Kenyan ",
 	detail: "750 ml",
-	price: "$20",
+	price: "$200",
  },
  {
-	name: "Irish Guinness",
+	name: "Green Tea",
 	country: "IE",
 	detail: "600 ml",
-	price: "$29",
+	price: "$290",
  },
 ];
 
 const mockTailLists = [
  {
-	name: "Tropical Bloom",
+	name: "Karak",
 	country: "US",
 	detail: "Battle",
-	price: "$10",
+	price: "$100",
  },
  {
-	name: "Passionfruit Mint",
+	name: "Mezban",
 	country: "US",
 	detail: "Battle",
-	price: "$49",
+	price: "$490",
  },
  {
-	name: "Citrus Glow",
+	name: "Chenak",
 	country: "CA",
 	detail: "750 ml",
-	price: "$20",
+	price: "$200",
  },
  {
-	name: "Lavender Fizz",
+	name: "Gulbahar",
 	country: "IE",
 	detail: "600 ml",
-	price: "$29",
+	price: "$290",
  },
 ];
 
@@ -137,35 +137,35 @@ const socials = [
 const allCocktails = [
  {
 	id: 1,
-	name: "Classic Mojito",
-	image: "/images/drink1.png",
-	title: "Simple Ingredients, Bold Flavor",
+	name: "TAPAL DANEDAR",
+	image: "/images/tea1.png",
+	title: "Tum, Mein Aik Aur Cup Chai!",
 	description:
-	 "Made with tequila, lime juice, and orange liqueur, the Margarita is easy to make and full of character. Add a salted rim for the perfect drink on summer nights.",
+	 "Tapal Danedar offers the perfect balance of aroma, taste, and color in every cup which has made it the market leader and innovator within the tea category. As Pakistan’s first Danedar brand, it has proudly maintained its legacy as the number one choice for tea lovers across the country, ensuring unmatched consumer satisfaction.",
  },
  {
 	id: 2,
-	name: "Raspberry Mojito",
-	image: "/images/drink2.png",
-	title: "A Zesty Classic That Never Fails",
+	name: "Tapal Family Mixture",
+	image: "/images/tea2.png",
+	title: "Meri Family, Meri Strength!",
 	description:
-	 "The Margarita is a classic that balances tangy lime, smooth tequila, and a touch of sweetness. Shaken, frozen, or on the rocks—it’s always crisp & refreshing.",
+	 "Tapal Family Mixture was the first brand introduced by Tapal Tea Company. This unique blend of small and large tea leaves creates a strong, flavorful cup with the perfect balance of taste, color, and aroma. Over time, it has become a beloved regional favorite, expertly crafted to match the bold taste preferences of Karachiites who love their tea strong.",
  },
  {
 	id: 3,
-	name: "Violet Breeze",
-	image: "/images/drink3.png",
-	title: "Simple Ingredients, Bold Flavor",
+	name: "Tapal Tezdum",
+	image: "/images/tea3.png",
+	title: "Lagay Tha Kar Ke!",
 	description:
-	 "Made with tequila, lime juice, and orange liqueur, the Margarita is easy to make and full of character. Add a salted rim for the perfect drink on summer nights.",
+	 "Tapal Tezdum is a blend of high-grown Kenyan primary leaf grades, carefully selected for their unique flavor and bright, golden color. It brews quickly and delivers a rich, strong taste, crafted to ensure consumer satisfaction.",
  },
  {
 	id: 4,
-	name: "Curacao Mojito",
-	image: "/images/drink4.png",
-	title: "Crafted With Care, Poured With Love",
+	name: "Tapal Gulbahar",
+	image: "/images/tea4.png",
+	title: "Kashmiri aur Sabz Chai dono banai!",
 	description:
-	 "Each cocktail is made with fresh ingredients and a passion for perfecting every pour, whether you're celebrating or simply relaxing.",
+	 "Gulbahar, the oldest green tea brand, was launched by Tapal in 1999-2000 to especially cater to its northern market where “Sabz Chai or Qahwa” and “Kashmiri Chai” is very popular.",
  },
 ];
 

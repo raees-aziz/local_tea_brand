@@ -23,7 +23,7 @@ const App = () => {
    <Art/>
    <Menu/>
    <Contact/>
-   <SmoothVideoScroll/>
+   {/* <SmoothVideoScroll/> */}
    {/* <div className='h-dvh bg-black'></div> */}
 
    </main>
