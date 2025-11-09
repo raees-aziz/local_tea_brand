@@ -89,16 +89,14 @@ const Hero = () => {
             <div className="space-y-5 hidden md:block">
               <p>Hot. Crisp. Classic.</p>
               <p className="subtitle">
-                Sip the Spirit <br />
-                of Winter
+                Where every detail matters <br />
+               from leaf to pour
               </p>
             </div>
 
             <div className="view-cocktails">
               <p className="subtitle">
-                Every product on our menu is a blend of premium ingredients,
-                ceative flair, and timeless recipes - designed to delight your
-                senses
+                Every cup we pour reflects our devotion to perfection — from the first leaf to the final pour. That care is what transforms a simple tea into a truly memorable experience
               </p>
               <a href="#cocktails">View Product</a>
             </div>
