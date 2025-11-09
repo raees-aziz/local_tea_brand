@@ -16,15 +16,11 @@ const parallaxTimeline=gsap.timeline({
     // markers:true
   }
 })
-parallaxTimeline.to(".drink", {
-  y: -200,
-  opacity: 1,
-  duration: 2,
-  stagger: 0.3, // yahan sahi jagah par
-  ease: "power2.out",
-});
-parallaxTimeline.from('c-left-leaf',{x:-100,y:100})
 
+parallaxTimeline.from('#c-left-leaf',{x:-100,y:100})
+.from('#c-right-leaf', {
+		x: 100, y: 100
+	})
 },[])
 
   return (
