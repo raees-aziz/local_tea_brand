@@ -56,7 +56,7 @@ const Contact = () => {
         <h2>Where to Find Us</h2>
 
         <div>
-          <h3>Visit Our Bar</h3>
+          <h3>Visit Our Shop</h3>
           <p>House No # xyz sector D/10, Surjani Town, Karachi</p>
         </div>
         <div>
